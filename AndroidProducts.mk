@@ -4,4 +4,5 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/calyx_bangkk.mk \
     $(LOCAL_DIR)/lineage_bangkk.mk
