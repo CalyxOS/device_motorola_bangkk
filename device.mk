@@ -20,17 +20,17 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 PRODUCT_SHIPPING_API_LEVEL := 31
 
-# Inherit from motorola sm7325-common
-$(call inherit-product, device/motorola/sm7325-common/common.mk)
+# Inherit from motorola sm6375-common
+$(call inherit-product, device/motorola/sm6375-common/common.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResDubai \
-    LineageSystemUIDubai \
-    SettingsResDubai \
-    SettingsProviderResDubai \
-    SystemUIResDubai \
-    WifiResDubai
+    FrameworksResBangkk \
+    LineageSystemUIBangkk \
+    SettingsResBangkk \
+    SettingsProviderResBangkk \
+    SystemUIResBangkk \
+    WifiResBangkk
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -48,7 +48,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.dubai
+    android.hardware.biometrics.fingerprint@2.3-service.bangkk
 
 # GMS
 ifeq ($(WITH_GMS),true)
@@ -80,7 +80,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.dubai
+    sensors.bangkk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -90,7 +90,7 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-dubai-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-dubai.conf
+    $(LOCAL_PATH)/configs/thermal-engine-bangkk-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-bangkk.conf
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/dubai/dubai-vendor.mk)
+$(call inherit-product, vendor/motorola/bangkk/bangkk-vendor.mk)
