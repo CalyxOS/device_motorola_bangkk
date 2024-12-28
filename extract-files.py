@@ -60,7 +60,7 @@ module = ExtractUtilsModule(
     extract_fns=extract_fns,
     add_firmware_proprietary_file=True,
     add_factory_proprietary_file=True,
-    add_generated_carriersettings=True,
+    add_generated_carriersettings_apns=True,
 )
 
 if __name__ == '__main__':
