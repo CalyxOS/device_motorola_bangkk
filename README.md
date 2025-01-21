@@ -1,3 +1,1 @@
-Device tree for the Motorola moto g84
-
-Information about the device, build and install instructions can be found [here](http://wiki.lineageos.org/devices/bangkk/)
+# Device configuration files for Motorola moto g84 5G (bangkk)

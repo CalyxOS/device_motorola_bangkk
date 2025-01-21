@@ -20,12 +20,8 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/motorola/bangkk',
     'vendor/motorola/sm6375-common',
-    'hardware/qcom-caf/sm8350',
-    'hardware/qcom-caf/wlan',
-    'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/qcom/opensource/commonsys/display',
-    'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display',
 ]
 
@@ -34,9 +30,14 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'product/priv-app/MotCamera4/MotCamera4.apk': blob_fixup()
-        .apktool_patch('MotCamera4-patches'),
-    ('vendor/lib/libmot_chi_desktop_helper.so', 'vendor/lib64/libmot_chi_desktop_helper.so'): blob_fixup()
+    'vendor/lib64/libBSTSWAD.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
+    'vendor/lib64/libmot_chi_desktop_helper.so': blob_fixup()
         .add_needed('libgui_shim_vendor.so'),
 }  # fmt: skip
 
@@ -47,15 +48,16 @@ extract_fns: extract_fns_user_type = {
 module = ExtractUtilsModule(
     'bangkk',
     'motorola',
+    namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
-    namespace_imports=namespace_imports,
     extract_fns=extract_fns,
     add_firmware_proprietary_file=True,
+    add_generated_carriersettings=True,
 )
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'sm7325-common', module.vendor
+        module, 'sm6375-common', module.vendor
     )
     utils.run()
