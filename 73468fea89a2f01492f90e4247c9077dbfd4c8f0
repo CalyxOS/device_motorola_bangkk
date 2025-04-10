@@ -16,6 +16,24 @@
       "message": "gitupstream-lineage missing?",
       "revId": "73468fea89a2f01492f90e4247c9077dbfd4c8f0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c87f266_d64d4fd5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2025-04-10T10:18:04Z",
+      "side": 1,
+      "message": "https://review.calyxos.org/c/CalyxOS/device_motorola_bangkk/+/38232",
+      "parentUuid": "2d176efb_38aaf9c9",
+      "revId": "73468fea89a2f01492f90e4247c9077dbfd4c8f0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
