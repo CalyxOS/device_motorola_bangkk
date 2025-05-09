@@ -59,8 +59,6 @@ on post-fs-data
     chown radio /data/vendor/radio/bluetooth_sar
 
 on early-init
-    insmod /vendor/lib/modules/leds_aw99703.ko
-    insmod /vendor/lib/modules/leds_lm3697.ko
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules/${ro.vendor.mot.gki.path} zram
 
 on boot

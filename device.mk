@@ -42,6 +42,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.bangkk
 
+# FM
+TARGET_HAS_FM := true
+
+PRODUCT_PACKAGES += \
+    FM2
+
 # Init
 PRODUCT_PACKAGES += \
     init.mmi.overlay.rc

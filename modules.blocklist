@@ -101,8 +101,6 @@ blocklist fpsensor_spi_tee
 blocklist fpc1020_mmi
 blocklist qpnp_adaptive_charge
 blocklist nova_0flash_mmi
-blocklist leds_aw99703
-blocklist leds_lm3697
 blocklist focaltech_0flash_v2_mmi
 blocklist mmi_smbcharger_iio
 blocklist mmi_parallel_charger_iio
