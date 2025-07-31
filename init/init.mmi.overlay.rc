@@ -58,9 +58,6 @@ on post-fs-data
     chmod 0644 /data/vendor/radio/bluetooth_sar
     chown radio /data/vendor/radio/bluetooth_sar
 
-on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules/${ro.vendor.mot.gki.path} zram
-
 on boot
     # vibrator hal need to access this sysfs node for AF noise issue
     chown system system /sys/devices/platform/soc/soc:mot,cam-actuator/onekey_actuator
