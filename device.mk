@@ -52,6 +52,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mmi.overlay.rc
 
+# LiveDisplay
+$(call soong_config_set,livedisplay_sysfs,enable_af,true)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.samsung \

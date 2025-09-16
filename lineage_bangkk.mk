@@ -23,6 +23,6 @@ PRODUCT_MODEL := moto g84 5G
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="bangkk_g-user 14 U1TCS34.22-64-19-4-6 f9a73f-132e5c3 release-keys MUR1-0.90" \
-    BuildFingerprint=motorola/bangkk_g/bangkk:14/U1TCS34.22-64-19-4-6/f9a73f-132e5c3:user/release-keys \
+    BuildDesc="bangkk_g-user 15 V1TC35H.88-16 c3b1cd-0e8d4 release-keys MV-301" \
+    BuildFingerprint=motorola/bangkk_g/bangkk:15/V1TC35H.88-16/c3b1cd-0e8d4:user/release-keys \
     DeviceProduct=bangkk_g
