@@ -240,12 +240,6 @@ vendor/lib64/libets_teeclient_v3.so
 vendor/usr/keylayout/fts_ts.kl
 vendor/usr/keylayout/goodix_ts.kl
 
-# HotwordEnrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
 # NFC - configs
 vendor/etc/libnfc-sec-nci.conf
 vendor/etc/libnfc-sec-vendor.conf
