@@ -21,6 +21,6 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g84 5G
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="bangkk_g-user 15 V1TCS35H.88-16-2 fd39b-8ae08d release-keys MV-301" \
-    BuildFingerprint=motorola/bangkk_g/bangkk:15/V1TCS35H.88-16-2/fd39b-8ae08d:user/release-keys \
+    BuildDesc="bangkk_g-user 15 V1TCS35H.88-16-4 d201a-da14f release-keys MV-301" \
+    BuildFingerprint=motorola/bangkk_g/bangkk:15/V1TCS35H.88-16-4/d201a-da14f:user/release-keys \
     DeviceProduct=bangkk_g
